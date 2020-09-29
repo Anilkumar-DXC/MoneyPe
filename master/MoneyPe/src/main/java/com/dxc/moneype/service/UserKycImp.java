@@ -14,7 +14,11 @@ public class UserKycImp implements IUserKycService {
 	UserKycRepository repo;
 
 	@Override
-	public UserKyc add(UserKyc kyc)throws UserKycException {
+	public UserKyc add(UserKyc kyc) {
+		
+		return repo.save(kyc);
+			
+			/*throws UserKycException {
 		
 		UserKyc isValid=ValidateUserKyc(kyc);
 		
@@ -44,7 +48,7 @@ public class UserKycImp implements IUserKycService {
 			
 		}
 		
-		return null;
+		return null;*/
 	}
 
 }
