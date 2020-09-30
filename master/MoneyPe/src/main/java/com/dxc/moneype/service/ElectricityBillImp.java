@@ -37,7 +37,7 @@ public class ElectricityBillImp implements IElectricityBillService {
 	
 
 	
-	if((electric.getServiceNumber()>= 1000000000l)) {
+	if((electric.getServiceNumber()>= 1000000000l) && (electric.getAmount()>0)) {
 		
 		
 	 return electric;

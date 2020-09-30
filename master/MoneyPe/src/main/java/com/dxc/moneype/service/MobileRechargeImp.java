@@ -34,7 +34,7 @@ private MobileRecharge validateMobileRecharge(MobileRecharge recharge) {
 	
 
 	
-	if((recharge.getMobileNumber() >= 1000000000l)) {
+	if((recharge.getMobileNumber() >= 1000000000l) && (recharge.getAmount()>0)) {
 		
 		
 	 return recharge;

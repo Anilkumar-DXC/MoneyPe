@@ -31,7 +31,7 @@ public class MoneyTransferImp implements IMoneyTransfer {
 	
 	private MoneyTransfer ValidateMoneyTransfer(MoneyTransfer transfer) {
 		
-		if((transfer.getAccountNo()>=100000000000l) && (transfer.getBankIFSC().length()>=11)) {
+		if((transfer.getAccountNo()>=100000000000l) && (transfer.getBankIFSC().length()>=11) &&(transfer.getAmount()>0)) {
 			
 			return transfer;
 		}

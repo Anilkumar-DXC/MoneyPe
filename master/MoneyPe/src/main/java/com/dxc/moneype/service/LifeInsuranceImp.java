@@ -29,7 +29,7 @@ public class LifeInsuranceImp implements ILifeInsurance {
 	
 	private LifeInsurance ValidateLifeInsurance(LifeInsurance insurance) {
 		
-		if((insurance.getPolicyNumber()>=1000000000l)) {
+		if((insurance.getPolicyNumber()>=1000000000l) &&(insurance.getAmount()>0)) {
 			
 			return insurance;
 		}

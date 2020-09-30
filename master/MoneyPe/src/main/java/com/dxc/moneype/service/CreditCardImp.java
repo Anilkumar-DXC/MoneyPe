@@ -34,7 +34,7 @@ CreditCard isValid = validateCreditCard(card);
 	
 
 	
-	if((card.getCreditcardNumber()>= 100000000000000l)) {
+	if((card.getCreditcardNumber()>= 100000000000000l) && (card.getAmount()>0)) {
 		
 		
 	 return card;
