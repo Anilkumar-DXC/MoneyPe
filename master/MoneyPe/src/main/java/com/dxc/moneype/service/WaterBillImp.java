@@ -29,7 +29,7 @@ public class WaterBillImp implements IWaterBill {
 	
 	private WaterBill ValidateWaterBill(WaterBill water) {
 		
-		if((water.getCanNumber()>=1000000000l)) {
+		if((water.getCanNumber()>=100000000l)) {
 			
 			return water;
 		}
