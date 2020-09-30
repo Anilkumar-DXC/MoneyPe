@@ -14,10 +14,10 @@ public class UserRegistrationImp implements IUserRegistrationService {
 	UserRegistrationRepository repo;
 
 	@Override
-	public UserRegistration add( UserRegistration register) {
+	public UserRegistration add( UserRegistration register) //{
 		
-		return repo.save(register);
-		/*throws UserRegistrationException{
+		//return repo.save(register);
+		throws UserRegistrationException{
 		
 		UserRegistration isValid=ValidateUserRegistration(register);
 		
@@ -37,7 +37,7 @@ public class UserRegistrationImp implements IUserRegistrationService {
 			return register;
 		}
 		
-		return null;*/
+		return null;
 	}
 
 	
