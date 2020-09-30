@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 public class UserKyc {
 	@Id
 
-	private int accountNumber;
+	private long accountNumber;
 	private String nameOfApplication;
 	private String fatherName;
 	private String dob;
@@ -30,10 +30,11 @@ public class UserKyc {
 	
 	
 	
-	public int getAccountNumber() {
+	
+	public long getAccountNumber() {
 		return accountNumber;
 	}
-	public void setAccountNumber(int accountNumber) {
+	public void setAccountNumber(long accountNumber) {
 		this.accountNumber = accountNumber;
 	}
 	public String getNameOfApplication() {
