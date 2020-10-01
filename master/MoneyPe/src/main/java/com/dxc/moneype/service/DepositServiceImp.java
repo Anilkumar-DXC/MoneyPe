@@ -1,5 +1,7 @@
 package com.dxc.moneype.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -42,6 +44,14 @@ Deposit isValid=ValidateDeposit(deposit);
 		
 		return null;
 	}
+
+	@Override
+	public List<Deposit> getBalance() {
+		
+		return repo.findAll();
+	}
+	
+	
 		
 		//return repo.save(deposit);
 	}

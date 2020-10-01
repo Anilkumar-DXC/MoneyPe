@@ -108,6 +108,8 @@ public class MoneyPeController{
 	
 	
 	
+	
+	
 	@PostMapping(path = "/add")
 	public UserRegistration add(@RequestBody UserRegistration register) {
 		
@@ -186,6 +188,12 @@ public class MoneyPeController{
 	public List<MiniStatement> getOne(){
 		
 		return service10.getMini();
+	}
+	
+	@GetMapping("/balance")
+	public List<Deposit> balance(){
+		
+		return service8.getBalance();
 	}
 	
 	
