@@ -44,10 +44,10 @@ import com.dxc.moneype.entities.MoneyTransfer;
 		    public void testCreateTransfer() {
 		       MoneyTransfer transfer=new MoneyTransfer();
 		       
-		    	transfer.setAccountNo(1234567890);
-		    	transfer.setBankIFSC("IDIB567876");
+		    	transfer.setAccountNo(1278563890);
+		    	transfer.setBankIFSC("IDIB567873");
 		    	transfer.setAmount(1000);
-		    	transfer.setAccountHolder("Anilkumar");
+		    	transfer.setAccountHolder("AnilKumar");
 		        ResponseEntity<MoneyTransfer> postResponse = restTemplate.postForEntity(getRootUrl() + "/moneytransfer", transfer, MoneyTransfer.class);
 		        assertNotNull(postResponse);
 		        assertNotNull(postResponse.getBody());
